@@ -53,6 +53,7 @@ def async_fetch_future(url):
 
     def parse_future(f):
         my_future.set_result(f.result())
+
         # print 'Future result:', my_future.result()
     fetch_future.add_done_callback(
         parse_future
